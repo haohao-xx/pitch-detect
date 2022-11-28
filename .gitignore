@@ -1,5 +1,6 @@
 node_modules
 /dist
+/esbuild
 package-lock.json
 .DS_Store
 

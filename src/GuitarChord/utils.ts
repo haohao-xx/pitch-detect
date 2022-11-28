@@ -1,7 +1,7 @@
 /** @format */
 
-import * as ndarray from 'ndarray'
-import * as resample from 'ndarray-resample'
+import ndarray from 'ndarray'
+import resample from 'ndarray-resample'
 
 function isSafari() {
     return /Safari/.test(navigator.userAgent) && !/Chrome/.test(navigator.userAgent)
