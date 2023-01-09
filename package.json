@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "esbuild-dev": "node esbuild.dev.js",
-    "esbuild-build": "node esbuild.prod.js"
+    "esbuild-dev": "node esbuildConfig/esbuild.dev.js",
+    "esbuild-build": "node esbuildConfig/esbuild.prod.js"
   },
   "keywords": [
     "pitch-detect",
