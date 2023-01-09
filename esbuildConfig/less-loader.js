@@ -47,7 +47,7 @@ module.exports.lessLoader = (opts = {}) => {
             // Resolve *.less files with namespace
             build.onResolve({filter: /\.less$/, namespace: 'file'}, args => {
                 const filePath = join(args.resolveDir, args.path)
-                console.log('打印resolve参数',filePath)
+                console.log('打印resolve参数', filePath)
                 return {
                     path: filePath,
                     watchFiles: !!build.initialOptions.watch ? [filePath, ...getLessImports(filePath)] : undefined,
@@ -127,7 +127,7 @@ const getLessImports = filePath => {
 
 /** Convert less error into esbuild error */
 const convertLessError = error => {
-  console.log('打印错误信息',error)
+    console.log('打印错误信息', error)
     const sourceLine = error.extract.filter(line => line)
     const lineText = sourceLine.length === 3 ? sourceLine[1] : sourceLine[0]
     return {

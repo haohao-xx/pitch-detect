@@ -13,7 +13,7 @@ require('esbuild')
         bundle: true,
         loader: {'.png': 'file'},
         publicPath: 'http://127.0.0.1:5500/public/',
-        plugins: [lessPlugin.lessLoader(),cssLoader()],
+        plugins: [lessPlugin.lessLoader(), cssLoader()],
     })
     .then(() => console.log('Done'))
     .catch(() => process.exit(1))

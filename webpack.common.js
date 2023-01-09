@@ -77,7 +77,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             title: 'pitch-detect',
-            filename: path.resolve(__dirname, 'dist/webserver/index.html'),
+            //filename: path.resolve(__dirname, 'dist/webserver/index.html'),
         }),
         new ESLintPlugin(),
     ],

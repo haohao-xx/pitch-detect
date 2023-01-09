@@ -11,6 +11,10 @@ module.exports = merge(common, {
     devServer: {
         hot: true,
         port: 9000,
+        headers: {
+            'Cross-Origin-Opener-Policy': 'same-origin',
+            'Cross-Origin-Embedder-Policy': 'require-corp',
+        },
     },
     plugins: [new ReactRefreshPlugin()],
 })
